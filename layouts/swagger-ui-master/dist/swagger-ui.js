@@ -1829,7 +1829,7 @@ Resolver.prototype.resolve = function (spec, callback, scope) {
       url: host,
       method: 'get',
       headers: {
-        accept: this.scope.swaggerRequestHeaders || 'application/json'
+        accept: this.scope.swaggerRequestHeaders || 'application/json', 'application/xml'
       },
       on: {
         error: function () {
@@ -2504,7 +2504,7 @@ SwaggerSpecConverter.prototype.resourceListing = function(obj, swagger, callback
     }
     var http = {
       url: absolutePath,
-      headers: {accept: 'application/json'},
+      headers: {accept: 'application/json', 'application/json'},
       on: {},
       method: 'get'
     };
