@@ -1829,7 +1829,7 @@ Resolver.prototype.resolve = function (spec, callback, scope) {
       url: host,
       method: 'get',
       headers: {
-        accept: this.scope.swaggerRequestHeaders || 'application/xml', 'application/json'
+        accept: this.scope.swaggerRequestHeaders || 'application/json'
       },
       on: {
         error: function () {
@@ -2504,7 +2504,7 @@ SwaggerSpecConverter.prototype.resourceListing = function(obj, swagger, callback
     }
     var http = {
       url: absolutePath,
-      headers: {accept: 'application/xml', 'application/json'},
+      headers: {accept: 'application/json'},
       on: {},
       method: 'get'
     };
@@ -3129,6 +3129,8 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
   this.clientAuthorizations = clientAuthorizations;
   this.consumes = args.consumes || parent.consumes || ['application/json'];
   this.produces = args.produces || parent.produces || ['application/json'];
+  this.consumes = args.consumes || parent.consumes || ['application/xml'];
+  this.produces = args.produces || parent.produces || ['application/xml'];
   this.deprecated = args.deprecated;
   this.description = args.description;
   this.host = parent.host || 'localhost';
