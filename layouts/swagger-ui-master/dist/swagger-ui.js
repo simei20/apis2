@@ -3127,10 +3127,8 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
   this.authorizations = args.security;
   this.basePath = parent.basePath || '/';
   this.clientAuthorizations = clientAuthorizations;
-  this.consumes = args.consumes || parent.consumes || ['application/json'];
-  this.produces = args.produces || parent.produces || ['application/json'];
-  this.consumes = args.consumes || parent.consumes || ['application/xml'];
-  this.produces = args.produces || parent.produces || ['application/xml'];
+  this.consumes = args.consumes || parent.consumes || ['application/json', 'application/xml'];
+  this.produces = args.produces || parent.produces || ['application/json', 'application/xml'];
   this.deprecated = args.deprecated;
   this.description = args.description;
   this.host = parent.host || 'localhost';
