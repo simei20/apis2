@@ -59,12 +59,6 @@
             "name": "X-Request-Tag",
             "in": "header",
             "type": "string"
-          },
-          {
-            "description": "Retorno do tipo application/json ou application/xml",
-            "name": "Accept",
-            "in": "header",
-            "type": "string"
           }
         ],
         "responses": {
