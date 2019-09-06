@@ -183,6 +183,48 @@
                             },
                             "qCom": {
                               "type": "string"
+                            },
+                            "cEANTrib": {
+                              "type": "string"
+                            },
+                            "vUnTrib": {
+                              "type": "string"
+                            },
+                            "qTrib": {
+                              "type": "string"
+                            },
+                            "vProd": {
+                              "type": "string"
+                            },
+                            "xProd": {
+                              "type": "string"
+                            },
+                            "vUnCom": {
+                              "type": "string"
+                            },
+                            "indTot": {
+                              "type": "string"
+                            },
+                            "uTrib": {
+                              "type": "string"
+                            },
+                            "NCM": {
+                              "type": "string"
+                            },
+                            "uCom": {
+                              "type": "string"
+                            },
+                            "CFOP": {
+                              "type": "string"
+                            },
+                            "CEST": {
+                              "type": "string"
+                            },
+                            "rastro": {
+                              "type": "array",
+                              "items": {
+                                "properties": {}
+                              }
                             }
                           }
                         }
