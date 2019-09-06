@@ -159,7 +159,34 @@
                     "obsCont":{
                       "type": "array",
                       "items": { 
-                        "type": "object"
+                      }
+                    }
+                  }
+                },
+                "det": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nItem": {
+                        "type": "string"
+                      },
+                      "prod": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "cEAN": {
+                              "type": "string"
+                            },
+                            "cProd": {
+                              "type": "string",
+                            },
+                            "qCom": {
+                              "type": "string"
+                            }
+                          }
+                        }
                       }
                     }
                   }
