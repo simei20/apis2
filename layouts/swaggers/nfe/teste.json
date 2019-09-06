@@ -156,10 +156,9 @@
                     "infCpl": {
                       "type": "string"
                     },
-                    "obsCont":{
+                    "obsCont": {
                       "type": "array",
-                      "items": { 
-                      }
+                      "items": {}
                     }
                   }
                 },
@@ -180,7 +179,7 @@
                               "type": "string"
                             },
                             "cProd": {
-                              "type": "string",
+                              "type": "string"
                             },
                             "qCom": {
                               "type": "string"
@@ -196,7 +195,7 @@
           }
         }
       }
-    },    
+    },
     "Status": {
       "type": "object",
       "properties": {
