@@ -111,12 +111,62 @@
   },
   "definitions": {
     "NFe": {
+      "type": "object",
       "properties": {
-        "cnpj": {
-          "type": "string"
+        "protNFe": {
+          "type": "object",
+          "properties": {
+            "infProt": {
+              "type": "object",
+              "properties": {
+                "nProt": {
+                  "type": "string"
+                },
+                "digVal": {
+                  "type": "string"
+                },
+                "dhRecbto": {
+                  "type": "string"
+                },
+                "Id": {
+                  "type": "string"
+                },
+                "chNFe": {
+                  "type": "string"
+                },
+                "xMotivo": {
+                  "type": "string"
+                },
+                "cStat": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         },
-        "situacao": {
-          "type": "string"
+        "NFe": {
+          "type": "object",
+          "properties": {
+            "InfNFe": {
+              "type": "object",
+              "properties": {
+                "InfAdic": {
+                  "type": "object",
+                  "properties": {
+                    "infCpl": {
+                      "type": "string"
+                    },
+                    "obsCont":{
+                      "type": "array",
+                      "items": { 
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },    
